@@ -1,0 +1,16 @@
+:root {
+
+  --primary: #0A2A66;
+  --primary-light: #1B4ED8;
+
+  --background: #F5F7FB;
+
+  --border: #E4E7EC;
+
+  --text: #101828;
+  --text-light: #667085;
+
+  --success: #12B76A;
+  --danger: #F04438;
+
+}

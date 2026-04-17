@@ -1,0 +1,45 @@
+.table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table thead{
+    background:#F9FAFB;
+}
+
+.table th{
+    text-align:left;
+    padding:12px;
+    font-size:14px;
+    color:var(--text-light);
+}
+
+.table td{
+    padding:14px 12px;
+    border-top:1px solid var(--border);
+}
+
+.table tr:hover{
+    background:#F9FAFB;
+    cursor:pointer;
+}
+
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    display: block;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .table td {
+    display: block;
+    border: none;
+    padding: 5px 0;
+  }
+}

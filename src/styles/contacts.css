@@ -1,0 +1,46 @@
+.contacts-actions{
+    display:flex;
+    gap:10px;
+}
+
+.contact-name{
+    font-weight:500;
+}
+
+.contact-phone{
+    color:var(--text-light);
+    font-size:14px;
+}
+
+.contact-empty{
+    color:#98A2B3;
+    font-style:italic;
+}
+
+.contact-view {
+    max-width: 500px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.contact-row label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.contact-value {
+    font-size: 15px;
+    padding: 10px 12px;
+    background: #f9fafb;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+.contact-actions {
+    margin-top: 20px;
+}

@@ -1,0 +1,128 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: linear-gradient(180deg,
+      var(--primary-dark),
+      #172554);
+
+  color: white;
+  padding: 20px 16px;
+}
+
+/* LOGO */
+
+.sidebar-logo {
+  margin-bottom: 30px;
+}
+
+.sidebar-logo h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-logo small {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* NAV */
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.sidebar-link.active {
+  background: linear-gradient(135deg,
+      var(--primary),
+      var(--primary-light));
+
+  color: white;
+}
+
+/* USER */
+
+.sidebar-user {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+
+.sidebar-user-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sidebar-user-email {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* LOGOUT */
+
+.sidebar-logout {
+  margin-top: 10px;
+  width: 100%;
+  padding: 9px;
+
+  border-radius: 8px;
+  border: none;
+
+  background: #ef4444;
+  color: white;
+
+  font-weight: 500;
+}
+
+.sidebar-logout:hover {
+  opacity: 0.9;
+}
+
+.sidebar-close {
+  display: none;
+}
+
+/* MOBILE SIDEBAR */
+@media (max-width: 768px) {
+  .sidebar-close {
+    display: block;
+    margin-bottom: 10px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+}
